@@ -9,7 +9,7 @@ for i in range(len(sequence)):
             count += 1
         else:
             break
-    support.append(count + 1)  # is the position of *, if we increase it by 1 we have the position of the number.
+    support.append(count)  # is the position of *, if we increase it by 1 we have the position of the number.
     counter.append(int(sequence[i][0:count]))  # in this way I extract what is before the * therefore the number of times the number appears.
     count = 0
 
