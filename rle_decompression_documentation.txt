@@ -1,15 +1,15 @@
-Inizialmente viene chiesta in input una sequenza di stringhe del tipo: count*bit ecc... quindi noi avremo una situazione del genere esempio:
-input: 3*0, 5*1, 1*0 -> 000111110 questo dovrebbe essere l'output.
+Initially a sequence of strings like: count*bit etc... is asked as input, so we will have a situation like this example:
+input: 3*0, 5*1, 1*0 -> 000111110 this should be the output.
 
-Successivamente vengono inizializzate 3 liste:
+Next 3 lists are initialized:
 	- counter
 	- result 
 	- support
-alcune liste già parlano da sole dato il loro nome, comunque counter serve per contenere il numero di occorenze di ogni bit, result serve per contenere il risultato invece supporto serve per contenere
-la posizione in cui si trova l'* in ogni elemento di sequence. E poi viene inizializzato un contatore che parte da 0. 
+some lists already speak for themselves given their names, however counter is for containing the number of occurrences of each bit, result is for containing the result instead support is for containing
+the position where the * is in each sequence element. And then a counter is initialized starting at 0. 
 
-Adesso vengono realizzati due cicli for tutti e due che si iterano per la lunghezza di sequence, in pratica questi doppi cicli fanno in modo di estrarre il numero di occorenze di ogni bit aggiungerlo alla lista counter ed allo stesso modo aggiungere la posizione in cui si trova l'asterisco negli elementi.
-Il modo con cui viene estratto il numero di occorenze avviene iterando count finchè ogni singolo carattere è diverso da * apena non è più diverso il ciclo nidificato si interrompe e alla lista counter ci va il valore che va da 0 a count convertito in intero.
-Ora che abbiamo tutti i numeri di occorenze non basta altro che iterare per il numero di occorenze e all'interno del ciclo mettere un altro ciclo che si itera che il valore di counter i-esimo dentro il quale aggiungerò alla lista il bit che si troverà alla posizione i-esima + 1
-del vettore support in tale modo riesco a trovare il bit che si ripete counter[i] volte.
-Infine mando a schermo result tutto attaccato.
+Now two for loops are made all iterating for the length of sequence, basically these double loops make sure to extract the number of occurrences of each bit add it to the counter list and likewise add the position where the asterisk is in the elements.
+The way the number of occurrences is extracted is by iterating count until every single character is different from * as soon as it is no longer different the nested loop stops and to the counter list there goes the value that goes from 0 to count converted to integer.
+Now that we have all the numbers of occurrences all we have to do is iterate for the number of occurrences and inside the loop put another loop that iterates that the i-th counter value inside which I will add to the list the bit that will be at the i-th position + 1
+of the support vector in such a way I can find the bit that repeats counter[i] times.
+Finally I send to screen result all attached.
